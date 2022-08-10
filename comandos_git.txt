@@ -1,0 +1,26 @@
+Comandos Git
+
+- git init
+git começa enxergar uma pasta como um repositório e observar as mudanças nos arquivos
+
+- git status
+print status of branches, commits and tracked files
+
+- git config --local user.name
+definir nome do autor das alterações do código
+
+- definições do git status
+	* HEAD: Estado atual do nosso código, ou seja, onde o Git os colocou
+	* Working tree: Local onde os arquivos realmente estão sendo armazenados e editados
+	* index: Local onde o Git armazena o que será commitado, ou seja, o local entre a working tree e o repositório Git em si
+
+- estado dos arquivos
+https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Gravando-Altera%C3%A7%C3%B5es-em-Seu-Reposit%C3%B3rio
+
+- git log
+visualizar o histórico de modificações no projeto
+	* git log --help
+	comando para ver opções disponíveis
+	* link com comandos do git log
+	https://devhints.io/git-log
+	
