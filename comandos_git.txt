@@ -17,10 +17,45 @@ definir nome do autor das alterações do código
 - estado dos arquivos
 https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Gravando-Altera%C3%A7%C3%B5es-em-Seu-Reposit%C3%B3rio
 
+- git add <arquivo>
+marcar o arquivo para ser salvo (commitado)
+
+- git add .
+marcar todos os arquivos da pasta para serem commitados
+
+- .gitignore
+Adicionar nomes de arquivos que não serão incluídos no git add. Após criar um arquivo .gitignore no repositório, adicionar os nomes nesse arquivo que não queremos dar git add
+
+- git reset <arquivo>
+remover o arquivo do index atual (o "about to be commited")
+
 - git log
 visualizar o histórico de modificações no projeto
 	* git log --help
 	comando para ver opções disponíveis
 	* link com comandos do git log
 	https://devhints.io/git-log
-	
+	* git log -p
+	nos mostra uma tela scroll. Para sair dessa visualizar, apertar "q"
+
+- Quando commitar?	
+	* O ideal é gerar um commit para cada modificação importante (uma funcionalidade a mais, correção de pequenos bugs, etc.): nem apenas para toda linha adicionada e nem apenas no fim do projeto
+	* Devemos gerar um commit sempre que a nossa base de código está em um estado do qual gostaríamos de nos lembrar.
+	* CONSENSO: nunca commitar código que não funciona
+
+- git init --bare (Para Repositório Remoto) 
+Após criar uma pasta vazia, damos o comando acima criar um repositório que servirá como servidor para que outros membros da equipe sincronizem seus trabalhos, poupando espaço de armazenamento
+
+- git remote add nome-repositorio caminho/para/o/repositorio
+Adicionar a ligação entre o repositório remoto e o repositório local
+
+- git clone
+Traz um repositório remoto para nosso computador, criando um repositório local
+
+- git push [repositorio] master
+Enviar as alterações do código para o repositório remoto
+
+
+
+
+
